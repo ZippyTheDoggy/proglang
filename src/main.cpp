@@ -15,7 +15,11 @@ int main(int argc, char** args) {
     }
     if(!fs::exists(file_output)) fs::create(file_output);
 
-    //
+    // std::string code = fs::read_file(file_input);
+    // std::cout << code << std::endl;
+
+    std::string code = "let a = 5";
+    // 
 
     return EXIT_SUCCESS;
 }
