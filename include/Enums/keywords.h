@@ -1,5 +1,5 @@
 #pragma once
-#include "./includes.h"
+#include "../includes.h"
 
 namespace KW {
     enum class Keyword {
@@ -31,6 +31,7 @@ namespace KW {
         if(is_type) return KeywordType::Type;
         if(is_mod)  return KeywordType::Modifier;
         if(is_fc)   return KeywordType::FlowControl;
+        return KeywordType::UNKNOWN;
     }
     bool is_kw_type(Keyword kw, KeywordType kwt) {
         return get_kw_type(kw) == kwt;
