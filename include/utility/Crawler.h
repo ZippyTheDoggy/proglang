@@ -22,11 +22,11 @@ class StringCrawler {
 
         // forward
         char next() {
-            if((pos + 1) < _str.length()) return _str[pos++];
+            if((pos + 1) <= _str.length()) return _str[pos++];
             return '\0';
         }
         char peek() {
-            if((pos + 1) < _str.length()) return _str[pos + 1];
+            if((pos + 1) <= _str.length()) return _str[pos + 1];
             return '\0';
         }
 
