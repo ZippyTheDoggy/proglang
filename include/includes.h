@@ -14,6 +14,7 @@
 #include <string>
 #include <algorithm>
 #include <fstream>
+#include <sstream>
 
 // Data Structures
 #include <vector>

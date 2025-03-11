@@ -1,0 +1,11 @@
+IDENTIFIER - let
+IDENTIFIER - str
+EQUALS - =
+STRING - "this is a string"
+IDENTIFIER - let
+IDENTIFIER - num
+EQUALS - =
+NUMBER - 123
+PLUS - +
+NUMBER - 253.23
+SEMICOLON - ;
