@@ -35,11 +35,10 @@ namespace fs {
         return true;
     }
     bool create(std::string path, bool is_directory = false) {
-        #ifndef CPP17
-        return false;
-        #endif
-
+        #ifdef CPP17
         if(is_directory && !exists(path)) std::filesystem::create_directory(path);
+        #endif
+        
         if(!is_directory && !exists(path)) {
             write_file(path, "", false, true);
         }
